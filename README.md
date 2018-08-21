@@ -34,7 +34,8 @@ O endereço da aplicação sempre estará disponível no appmanager.
 
 ### LoginButtonAction.js
 
-Em LoginButtonAction.js, definir o que se quer requisitar do usuário:
+Em LoginButtonAction.js, definir o que se quer requisitar do usuário.
+No exemplo abaixo, estamos requisitando nome, telefone, país, public key, encrypted public key:
 
 ```javascript
 import { uport } from './../../../util/connectors.js'
