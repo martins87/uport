@@ -8,6 +8,8 @@ Criar uma dapp em => https://appmanager.uport.me/
 - salvar signing key, exibida na linha
 - signer: SimpleSigner('SIGNING KEY')
 
+### connector.js
+
 Editar connector.js, adicionando:
 ```javascript
 import { Connect, SimpleSigner } from 'uport-connect'
@@ -22,6 +24,9 @@ export const web3 = uport.getWeb3()
 ```
 - ao criar sua dapp, deve-se anotar a SIGNING_KEY
 - o address sempre estará disponível no appmanager
+
+
+### LoginButtonAction.js
 
 Em LoginButtonAction.js, definir o que se quer requisitar do usuário:
 
