@@ -24,6 +24,7 @@ export const web3 = uport.getWeb3()
 - o address sempre estará disponível no appmanager
 
 Em LoginButtonAction.js, definir o que se quer requisitar do usuário:
+
 '''
 import { uport } from './../../../util/connectors.js'
 import { browserHistory } from 'react-router'
