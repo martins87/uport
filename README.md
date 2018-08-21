@@ -1,12 +1,12 @@
-## HOW TO
+## Exemplo simples de login em DApp
 
 Instalar dependências (node, truffle...)
 
 Baixar uport box => https://truffleframework.com/boxes/react-uport
 
 Criar uma dapp em => https://appmanager.uport.me/
-	salvar signing key, exibida na linha
-	signer: SimpleSigner('SIGNING KEY')
+- salvar signing key, exibida na linha
+- signer: SimpleSigner('SIGNING KEY')
 
 Editar connector.js, adicionando:
 - https://pastebin.com/raw/0wEZ5fZs
