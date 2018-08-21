@@ -1,4 +1,4 @@
-# HOW TO
+## HOW TO
 
 Instalar dependências (node, truffle...)
 
@@ -9,12 +9,12 @@ Criar uma dapp em => https://appmanager.uport.me/
 	signer: SimpleSigner('SIGNING KEY')
 
 Editar connector.js, adicionando:
-	https://pastebin.com/raw/0wEZ5fZs
-!	ao criar sua dapp, deve-se anotar a SIGNING_KEY
-	o address sempre estará disponível no appmanager
+- https://pastebin.com/raw/0wEZ5fZs
+- ao criar sua dapp, deve-se anotar a SIGNING_KEY
+- o address sempre estará disponível no appmanager
 
 Em LoginButtonAction.js, definir o que se quer requisitar do usuário:
-	https://pastebin.com/raw/ghhaYqw0
+- https://pastebin.com/raw/ghhaYqw0
 
 Em Dashboard.js, se exibe os dados requisitados:
-	https://pastebin.com/raw/QQ1fXRJQ
+- https://pastebin.com/raw/QQ1fXRJQ
