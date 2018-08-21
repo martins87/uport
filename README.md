@@ -9,7 +9,7 @@ Criar uma dapp em => https://appmanager.uport.me/
 - signer: SimpleSigner('SIGNING KEY')
 
 Editar connector.js, adicionando:
-- ```javascript
+```javascript
 import { Connect, SimpleSigner } from 'uport-connect'
 
 export let uport = new Connect('GoBlockchain Uport DApp', {
@@ -25,7 +25,7 @@ export const web3 = uport.getWeb3()
 
 Em LoginButtonAction.js, definir o que se quer requisitar do usuário:
 
-'''
+```javascript
 import { uport } from './../../../util/connectors.js'
 import { browserHistory } from 'react-router'
 
@@ -60,7 +60,7 @@ export function loginUser() {
     })
   }
 }
-'''
+```
 
 Em Dashboard.js, se exibe os dados requisitados:
 - https://pastebin.com/raw/QQ1fXRJQ
