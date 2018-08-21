@@ -2,9 +2,9 @@
 
 Instalar dependências (node, truffle...)
 
-Baixar uport box => https://truffleframework.com/boxes/react-uport
+Baixar uport box em https://truffleframework.com/boxes/react-uport
 
-Criar uma dapp em => https://appmanager.uport.me/
+Criar uma dapp em https://appmanager.uport.me/
 
 Salvar signing key, exibida na linha
 ```javascript
