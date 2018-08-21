@@ -9,7 +9,7 @@ Criar uma dapp em => https://appmanager.uport.me/
 - signer: SimpleSigner('SIGNING KEY')
 
 Editar connector.js, adicionando:
-- '''
+- ```javascript
 import { Connect, SimpleSigner } from 'uport-connect'
 
 export let uport = new Connect('GoBlockchain Uport DApp', {
@@ -19,7 +19,7 @@ export let uport = new Connect('GoBlockchain Uport DApp', {
 })
 
 export const web3 = uport.getWeb3()
-'''
+```
 - ao criar sua dapp, deve-se anotar a SIGNING_KEY
 - o address sempre estará disponível no appmanager
 
