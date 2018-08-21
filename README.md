@@ -5,12 +5,16 @@ Instalar dependências (node, truffle...)
 Baixar uport box => https://truffleframework.com/boxes/react-uport
 
 Criar uma dapp em => https://appmanager.uport.me/
-- salvar signing key, exibida na linha
-- signer: SimpleSigner('SIGNING KEY')
+
+Salvar signing key, exibida na linha
+```javascript
+signer: SimpleSigner('SIGNING KEY')
+```
 
 ### connector.js
 
 Editar connector.js, adicionando:
+
 ```javascript
 import { Connect, SimpleSigner } from 'uport-connect'
 
@@ -22,8 +26,10 @@ export let uport = new Connect('GoBlockchain Uport DApp', {
 
 export const web3 = uport.getWeb3()
 ```
-- ao criar sua dapp, deve-se anotar a SIGNING_KEY
-- o address sempre estará disponível no appmanager
+
+Ao criar sua dapp, deve-se anotar a SIGNING_KEY. Ela só será exibida uma única vez, na criação da DApp.
+
+O endereço da aplicação sempre estará disponível no appmanager.
 
 
 ### LoginButtonAction.js
@@ -68,4 +74,32 @@ export function loginUser() {
 ```
 
 Em Dashboard.js, se exibe os dados requisitados:
-- https://pastebin.com/raw/QQ1fXRJQ
+```javascript
+import React, { Component } from 'react'
+
+class Dashboard extends Component {
+  constructor(props, { authData }) {
+    super(props)
+    authData = this.props
+  }
+
+  render() {
+    return(
+      <main className="container">
+        <div className="pure-g">
+          <div className="pure-u-1-1">
+            <h1>Dashboard</h1>
+            <p><strong>{this.props.authData.name}</strong>, you have logged in with UPort. Your data:<br/>
+            phone: {this.props.authData.phone}<br/>
+            country: {this.props.authData.country}<br/>
+            public key: {this.props.authData.publicKey}<br/>
+            public encrypted key: {this.props.authData.publicEncKey}</p>
+          </div>
+        </div>
+      </main>
+    )
+  }
+}
+
+export default Dashboard
+```
